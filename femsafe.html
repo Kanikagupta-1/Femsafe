@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Women Safety | SecureHer</title>
+
+  <!-- ================= CSS ================= -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #ff4b7d, #ff758c);
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 26px;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      padding: 60px 20px;
+      text-align: center;
+      background: #fff0f5;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      color: #d6336c;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .buttons button {
+      padding: 14px 22px;
+      margin: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      color: #fff;
+    }
+
+    .sos {
+      background: #e03131;
+    }
+
+    .call {
+      background: #2f9e44;
+    }
+
+    .location {
+      background: #1c7ed6;
+    }
+
+    .buttons button:hover {
+      opacity: 0.9;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #c2255c;
+      text-align: center;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .card h4 {
+      margin-bottom: 10px;
+      color: #d6336c;
+    }
+
+    footer {
+      background: #343a40;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    footer p {
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ================= HEADER ================= -->
+  <header>
+    <h1>SecureHer</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#resources">Resources</a>
+      <a href="#tips">Safety Tips</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <div class="hero">
+    <h2>Your Safety Matters</h2>
+    <p>
+      SecureHer is a female safety website designed to provide quick access
+      to emergency help, safety resources, and awareness tools for women.
+    </p>
+
+    <div class="buttons">
+      <button class="sos" onclick="sendSOS()">🚨 SOS Alert</button>
+      <button class="call" onclick="callHelpline()">📞 Helpline</button>
+      <button class="location" onclick="shareLocation()">📍 Share Location</button>
+    </div>
+  </div>
+
+  <!-- ================= RESOURCES ================= -->
+  <section id="resources">
+    <h3>Emergency Resources</h3>
+    <div class="cards">
+      <div class="card">
+        <h4>Women Helpline</h4>
+        <p>Dial <strong>1091</strong> or <strong>181</strong> for immediate assistance.</p>
+      </div>
+      <div class="card">
+        <h4>Police Emergency</h4>
+        <p>Dial <strong>112</strong> in case of danger or emergency.</p>
+      </div>
+      <div class="card">
+        <h4>Legal Support</h4>
+        <p>Get information about women laws, rights and legal protection.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SAFETY TIPS ================= -->
+  <section id="tips">
+    <h3>Safety Tips for Women</h3>
+    <div class="cards">
+      <div class="card">
+        <h4>Stay Alert</h4>
+        <p>Be aware of your surroundings and avoid isolated areas.</p>
+      </div>
+      <div class="card">
+        <h4>Share Your Plan</h4>
+        <p>Inform trusted people about your location and travel plans.</p>
+      </div>
+      <div class="card">
+        <h4>Trust Your Instincts</h4>
+        <p>If something feels wrong, seek help immediately.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact">
+    <h3>Contact & Support</h3>
+    <div class="cards">
+      <div class="card">
+        <h4>Email Support</h4>
+        <p>support@secureher.org</p>
+      </div>
+      <div class="card">
+        <h4>Community Help</h4>
+        <p>Join local women safety groups and NGOs.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <p>© 2025 SecureHer | Designed & Developed for Female Safety</p>
+  </footer>
+
+  <!-- ================= JAVASCRIPT ================= -->
+  <script>
+    function sendSOS() {
+      alert("🚨 SOS Alert Sent! Emergency contacts have been notified.");
+    }
+
+    function callHelpline() {
+      alert("📞 Calling Women Helpline: 1091 / 181");
+    }
+
+    function shareLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          function (position) {
+            alert(
+              "📍 Location Shared!\nLatitude: " +
+                position.coords.latitude +
+                "\nLongitude: " +
+                position.coords.longitude
+            );
+          },
+          function () {
+            alert("Location access denied.");
+          }
+        );
+      } else {
+        alert("Geolocation is not supported by your browser.");
+      }
+    }
+  </script>
+</body>
+</html>
